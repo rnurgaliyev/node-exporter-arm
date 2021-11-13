@@ -1,6 +1,6 @@
 FROM arm32v7/alpine:latest
 
-ARG VERSION=1.0.1
+ARG VERSION=1.2.2
 
 RUN apk --no-cache add --virtual deps wget ca-certificates && \
     wget -O /tmp/node_exporter.tar.gz https://github.com/prometheus/node_exporter/releases/download/v$VERSION/node_exporter-$VERSION.linux-armv7.tar.gz && \
